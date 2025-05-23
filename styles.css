@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header / Hero Section */
+/* Header */
 header {
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
@@ -108,52 +108,44 @@ footer .small {
   margin-top: 20px;
 }
 
-/* Email Form Container */
-.email-form-container {
+/* Form Container */
+.form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
-.email-form-container form {
+.form-container form {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  max-width: 500px;
+  flex-direction: column;
+  max-width: 400px;
   width: 100%;
 }
 
-/* Input Field */
-.email-form-container input[type="email"] {
-  flex: 1;
-  padding: 12px 16px;
+.form-container input[type="email"] {
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
   font-size: 1rem;
-  min-width: 250px;
-  max-width: 350px;
-  box-sizing: border-box;
 }
 
-/* Submit Button */
-.email-form-container button {
-  padding: 12px 24px;
-  background-color: #667eea;
+.form-container button {
+  padding: 12px;
+  background: #667eea;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.email-form-container button:hover {
-  background-color: #5a67d8;
+.form-container button:hover {
+  background: #5a67d8;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.5rem;
@@ -163,14 +155,9 @@ footer .small {
     font-size: 1.2rem;
   }
 
-  .email-form-container input[type="email"],
-  .email-form-container button {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .email-form-container form {
-    flex-direction: column;
-    align-items: stretch;
+  .form-container input,
+  .form-container button {
+    font-size: 0.95rem;
+    padding: 10px;
   }
 }
